@@ -1,0 +1,8 @@
+<h3>This is my first awesome cart - by N30j0su3</h3>
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{item.name}}</span>
+    <span>{{item.price | currency}}</span>
+</div>
+<div class="clear-button">
+    <button (click)="clearCart()">Clear cart</button>
+</div>
